@@ -10,3 +10,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor backend iniciado na porta ${PORT}`);
 });
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://agenciaupcom.com.br'
+}));
